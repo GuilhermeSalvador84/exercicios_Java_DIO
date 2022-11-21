@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Soma_Multiplos {
+    public Soma_Multiplos() {
+    }
+
+    static int soma_multiplos(int A, int N) {
+        int multiplos = N / A;
+        int soma = multiplos * (multiplos + 1) / 2;
+        int ans = A * soma;
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        int A = leitor.nextInt();
+        int N = leitor.nextInt();
+        System.out.println(soma_multiplos(A, N));
+    }
+}
