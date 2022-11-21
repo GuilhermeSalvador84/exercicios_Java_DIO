@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class chamada_Recursiva {
+    public static int somatorio(int numero) {
+        if (numero == 0) {
+            return 0;
+        } else {
+            return numero + somatorio(numero - 1);
+        }
+    }
+    //TODO: Imprima o somatório de N (utilize o método "somatorio").
+
+    /**
+     * Método útil que calcula o somatório de um número usando recursividade.
+     */
+
+
+    public static void main(String[] args) {
+
+        Scanner leitor = new Scanner(System.in);
+        int numero = leitor.nextInt();
+        System.out.println(chamada_Recursiva.somatorio(numero));
+
+    }
+
+}
+
+
+
